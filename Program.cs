@@ -4,9 +4,16 @@ namespace ClassePessoa
 {
     class Program
     {
-        static void Main(string[] args)
+        public class Pessoa
         {
-            Console.WriteLine("Hello World!");
+            public string Nome { get; set; }
+            public int Idade { get; set; }
+            public double Altura { get; set; }
+
+            public void Apresentar()
+            {
+                Console.WriteLine($"Meu nome é {Nome}, tenho {Idade} anos e {Altura: 0.00}m de altura.");
+            }
         }
     }
 }
